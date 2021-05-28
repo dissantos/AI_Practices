@@ -1,8 +1,15 @@
+'''
+TAREFA 1 - A*
+
+Diego Santos Gonçalves - 20183012537
+Mariana Bulgarelli Alves dos Santos - 20183000330
+'''
+
 import networkx as nx
 import time
 
 def cria_grafo():
-    #inicialmente cria a o grafo com as cidades e adicionas a arestas de acordo com 
+    #Inicialmente, cria-se o grafo com as cidades e adicionam-se arestas de acordo com o enunciado da atividade 
     grafo_cidades = nx.Graph()
     grafo_cidades.add_edge("Arad","Zerind", weight=75, visitado= False)
     grafo_cidades.add_edge("Arad","Sibiu", weight=140, visitado= False)
@@ -31,7 +38,7 @@ def cria_grafo():
 
 
 def define_heuristica():
-    #agora fazemos um dicionário com a distância em linha reta até Bucarest
+    # Criacao de um dicionario para armazenar as distancias em linha reta ate Bucareste - heuristica
     dist_bucareste = dict()
     dist_bucareste["Arad"] = 366
     dist_bucareste["Bucareste"] = 0
@@ -55,7 +62,13 @@ def define_heuristica():
     dist_bucareste["Zerind"] = 374
     return dist_bucareste
 
-
+'''
+O algoritmo inicia no no correspondente a cidade de Arad. Busca-se chegar a Bucareste considerando a seguinte funcao de avaliacao a cada abertura de caminho:
+f(n) = g(n) + h(n)
+Onde g(n) eh o custo ate alcancar o no n ate o momento e h(n) eh a heuristica de distancia em linha reta.
+A partir de f, escolhe-se o caminho no qual f eh menor. Para isso, sao abertos todos os caminhos existentes a partir do no atual e realizada a comparacao do valor de f entre eles.
+Apos a escolha do menor, outros caminhos sao abertos e, novamente, o f eh comparado. Importante dizer que os caminhos anteriores nao sao descartados, sendo avaliados a cada nova abertura com relacao ao valor de f.
+'''
 def main():
     grafo_cidades = nx.Graph()
     dist_bucareste = dict()
@@ -75,8 +88,9 @@ def main():
         print("f: ",f)
         print("g: ",caminho_escolhido[1])
         print("h: ",dist_bucareste[no_atual])
-        print("======================================")
+        print()
 
+        # verifica se o nó atual eh o final. Se sim, sai do while
         if (no_atual == no_final):
             break
         
@@ -88,10 +102,18 @@ def main():
         lista_caminhos = sorted(lista_caminhos ,key=lambda x: x[1] + dist_bucareste[x[0][-1]])
         caminho_escolhido = lista_caminhos[0]
         del(lista_caminhos[0])
-        list_cidades.append(caminho_escolhido[0][-1])
-        no_atual = list_cidades[-1] 
 
-    print("Caminho escolhido: ", caminho_escolhido[0])   
+        print(f'Nó escolhido: {caminho_escolhido[0][-1]} - f: {caminho_escolhido[1]+dist_bucareste[caminho_escolhido[0][-1]]}, g: {caminho_escolhido[1]}, h: {dist_bucareste[caminho_escolhido[0][-1]]}')
+        print()
+        print('Demais opções:')
+        for n in lista_caminhos:
+            print(f'{n[0][-1]} - f: {n[1]+dist_bucareste[n[0][-1]]}, g: {n[1]}, h: {dist_bucareste[n[0][-1]]}')
+        print("======================================\n")
+        list_cidades.append(caminho_escolhido[0][-1])
+        no_atual = list_cidades[-1]
+
+    print('\n*********')
+    print(f"Caminho escolhido: {'  ->  '.join(caminho_escolhido[0])} - {caminho_escolhido[1]}")   
 
 
 if __name__ == '__main__':
