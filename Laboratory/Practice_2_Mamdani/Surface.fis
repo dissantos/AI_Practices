@@ -1,0 +1,69 @@
+[System]
+Name='Surface'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=25
+AndMethod='prod'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Velocidade'
+Range=[0 140]
+NumMFs=5
+MF1='Muito_baixa':'trimf',[-34.2592592592593 0.740740740740733 35.7407407407407]
+MF2='Baixa':'trimf',[0 35 70]
+MF3='Media':'trimf',[35 70 105]
+MF4='Alta':'trimf',[70 105 140]
+MF5='Muito_alta':'trimf',[105 140 175]
+
+[Input2]
+Name='Distância'
+Range=[0 140]
+NumMFs=5
+MF1='Pequena':'trimf',[-35 -4.441e-16 35]
+MF2='Moderadamente_Pequena':'trimf',[0 35 70]
+MF3='Mediana':'trimf',[34.6296296296296 69.6296296296296 104.62962962963]
+MF4='Moderadamente_Alta':'trimf',[70 105 140]
+MF5='Alta':'trimf',[105 140 175]
+
+[Output1]
+Name='Forca_Freio'
+Range=[0 10]
+NumMFs=5
+MF1='Fraca':'trimf',[-2.5 -2.776e-17 2.5]
+MF2='Moderadamente_Fraca':'trimf',[0 2.5 5]
+MF3='Média':'trimf',[2.5 5 7.5]
+MF4='Moderadamente_Forte':'trimf',[5 7.5 10]
+MF5='Forte':'trimf',[7.5 10 12.5]
+
+[Rules]
+4 1, 5 (1) : 1
+4 4, 4 (1) : 1
+4 2, 5 (1) : 1
+4 3, 4 (1) : 1
+4 5, 2 (1) : 1
+5 1, 5 (1) : 1
+5 2, 5 (1) : 1
+5 3, 4 (1) : 1
+5 4, 4 (1) : 1
+5 5, 3 (1) : 1
+3 5, 1 (1) : 1
+3 4, 2 (1) : 1
+3 3, 3 (1) : 1
+3 2, 4 (1) : 1
+3 1, 4 (1) : 1
+2 1, 3 (1) : 1
+2 2, 2 (1) : 1
+2 3, 2 (1) : 1
+2 4, 1 (1) : 1
+2 5, 1 (1) : 1
+1 5, 1 (1) : 1
+1 4, 1 (1) : 1
+1 3, 1 (1) : 1
+1 2, 2 (1) : 1
+1 1, 2 (1) : 1
