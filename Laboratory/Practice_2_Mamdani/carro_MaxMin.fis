@@ -1,11 +1,11 @@
 [System]
-Name='Surface'
+Name='carro_MaxMin'
 Type='mamdani'
 Version=2.0
 NumInputs=2
 NumOutputs=1
 NumRules=25
-AndMethod='prod'
+AndMethod='min'
 OrMethod='max'
 ImpMethod='min'
 AggMethod='max'
