@@ -1,0 +1,422 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.2 -N 100 -V 0 -S 0 -E 20 -H 5 -R
+Relation:     spambase
+Instances:    4601
+Attributes:   58
+              word_freq_make
+              word_freq_address
+              word_freq_all
+              word_freq_3d
+              word_freq_our
+              word_freq_over
+              word_freq_remove
+              word_freq_internet
+              word_freq_order
+              word_freq_mail
+              word_freq_receive
+              word_freq_will
+              word_freq_people
+              word_freq_report
+              word_freq_addresses
+              word_freq_free
+              word_freq_business
+              word_freq_email
+              word_freq_you
+              word_freq_credit
+              word_freq_your
+              word_freq_font
+              word_freq_000
+              word_freq_money
+              word_freq_hp
+              word_freq_hpl
+              word_freq_george
+              word_freq_650
+              word_freq_lab
+              word_freq_labs
+              word_freq_telnet
+              word_freq_857
+              word_freq_data
+              word_freq_415
+              word_freq_85
+              word_freq_technology
+              word_freq_1999
+              word_freq_parts
+              word_freq_pm
+              word_freq_direct
+              word_freq_cs
+              word_freq_meeting
+              word_freq_original
+              word_freq_project
+              word_freq_re
+              word_freq_edu
+              word_freq_table
+              word_freq_conference
+              char_freq_;
+              char_freq_(
+              char_freq_[
+              char_freq_!
+              char_freq_$
+              char_freq_#
+              capital_run_length_average
+              capital_run_length_longest
+              capital_run_length_total
+              class
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    3.0300344980090395
+    Node 2    -3.869831225504513
+    Node 3    -3.1651107269617746
+    Node 4    0.5518255998701015
+    Node 5    0.8617063581715184
+    Node 6    -4.465616015231565
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -3.0285117029957753
+    Node 2    3.868599297139684
+    Node 3    3.1637698760572155
+    Node 4    -0.5320621092365895
+    Node 5    -0.8797740774159197
+    Node 6    4.464518000440317
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.29718223964453633
+    Attrib word_freq_make    0.7184820739599609
+    Attrib word_freq_address    0.24649798782421423
+    Attrib word_freq_all    -1.075387627043127
+    Attrib word_freq_3d    -0.34377316860917
+    Attrib word_freq_our    -1.0565417344537604
+    Attrib word_freq_over    1.6542063693953144
+    Attrib word_freq_remove    -2.765334213913679
+    Attrib word_freq_internet    -2.333194287697186
+    Attrib word_freq_order    -1.4097611568272659
+    Attrib word_freq_mail    -1.276750606714025
+    Attrib word_freq_receive    0.5183121570520138
+    Attrib word_freq_will    -3.051988373092443
+    Attrib word_freq_people    0.24034529943990757
+    Attrib word_freq_report    0.17101850332179327
+    Attrib word_freq_addresses    0.8754132378545789
+    Attrib word_freq_free    -3.328593608699986
+    Attrib word_freq_business    -2.333873132666024
+    Attrib word_freq_email    0.3036209600142678
+    Attrib word_freq_you    4.416106333239814
+    Attrib word_freq_credit    -1.1687634226998833
+    Attrib word_freq_your    4.041571651319357
+    Attrib word_freq_font    -0.7766121384606997
+    Attrib word_freq_000    -2.138950645688284
+    Attrib word_freq_money    -1.1900965089197062
+    Attrib word_freq_hp    2.217595724129389
+    Attrib word_freq_hpl    1.2932127895392673
+    Attrib word_freq_george    2.8188626159754815
+    Attrib word_freq_650    0.2683763209959557
+    Attrib word_freq_lab    0.9525911701305045
+    Attrib word_freq_labs    0.7863766300346507
+    Attrib word_freq_telnet    0.42767978242077664
+    Attrib word_freq_857    0.7637432510170276
+    Attrib word_freq_data    0.7072150172740442
+    Attrib word_freq_415    0.6723344958521914
+    Attrib word_freq_85    0.589665864731698
+    Attrib word_freq_technology    -0.26234687277717184
+    Attrib word_freq_1999    0.10917071323955199
+    Attrib word_freq_parts    0.3237949685786353
+    Attrib word_freq_pm    0.972983859266194
+    Attrib word_freq_direct    0.18108662229817638
+    Attrib word_freq_cs    0.9551433611927558
+    Attrib word_freq_meeting    1.480435659940773
+    Attrib word_freq_original    0.32573074290188475
+    Attrib word_freq_project    0.9440650726518793
+    Attrib word_freq_re    1.5271676572450803
+    Attrib word_freq_edu    2.579333270188117
+    Attrib word_freq_table    0.49365740857554097
+    Attrib word_freq_conference    0.959971189882332
+    Attrib char_freq_;    1.2104291623616426
+    Attrib char_freq_(    0.7831628207552269
+    Attrib char_freq_[    0.5027863712396212
+    Attrib char_freq_!    -2.6804996196506865
+    Attrib char_freq_$    -2.7600346014956334
+    Attrib char_freq_#    -0.15927709773573528
+    Attrib capital_run_length_average    -0.590904578701509
+    Attrib capital_run_length_longest    -0.8187104941810309
+    Attrib capital_run_length_total    -2.272087290933336
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.8220070066352878
+    Attrib word_freq_make    -0.05846317064945844
+    Attrib word_freq_address    0.8840097541487381
+    Attrib word_freq_all    0.031382993144306245
+    Attrib word_freq_3d    -1.8771435243848793
+    Attrib word_freq_our    -6.103204769468935
+    Attrib word_freq_over    0.3689368872095804
+    Attrib word_freq_remove    -7.830786946936723
+    Attrib word_freq_internet    -4.579393039740751
+    Attrib word_freq_order    -1.595449241781151
+    Attrib word_freq_mail    -3.5286043584772986
+    Attrib word_freq_receive    1.6324282280018623
+    Attrib word_freq_will    -0.2723335244961569
+    Attrib word_freq_people    -0.2277767922238229
+    Attrib word_freq_report    -2.141816297355178
+    Attrib word_freq_addresses    -0.4314607886224295
+    Attrib word_freq_free    -9.015924582230074
+    Attrib word_freq_business    -3.9374123063597373
+    Attrib word_freq_email    1.1427456460452883
+    Attrib word_freq_you    1.7019498095296042
+    Attrib word_freq_credit    -2.637675190661935
+    Attrib word_freq_your    0.7993664997729915
+    Attrib word_freq_font    -2.1169972395333647
+    Attrib word_freq_000    -5.7152193189611955
+    Attrib word_freq_money    -6.701728190049951
+    Attrib word_freq_hp    8.808005040491029
+    Attrib word_freq_hpl    5.1126019158912275
+    Attrib word_freq_george    6.84737604427187
+    Attrib word_freq_650    0.7429563526122906
+    Attrib word_freq_lab    2.7592454691192474
+    Attrib word_freq_labs    1.3523858677780132
+    Attrib word_freq_telnet    1.8759529850663301
+    Attrib word_freq_857    1.6069698159071784
+    Attrib word_freq_data    3.722580409834942
+    Attrib word_freq_415    0.8498430510874555
+    Attrib word_freq_85    2.4607078970116727
+    Attrib word_freq_technology    -1.5012528184368066
+    Attrib word_freq_1999    2.7825274371066797
+    Attrib word_freq_parts    1.529034045722532
+    Attrib word_freq_pm    2.2109145900133775
+    Attrib word_freq_direct    1.0722080182039746
+    Attrib word_freq_cs    3.520562945527706
+    Attrib word_freq_meeting    5.110557019610494
+    Attrib word_freq_original    0.5700143510960041
+    Attrib word_freq_project    3.6388692905511775
+    Attrib word_freq_re    4.631714249214486
+    Attrib word_freq_edu    6.717348638897388
+    Attrib word_freq_table    1.876652226334182
+    Attrib word_freq_conference    2.9329772442500173
+    Attrib char_freq_;    1.9563055486266752
+    Attrib char_freq_(    1.4453580145009255
+    Attrib char_freq_[    1.3297212605685338
+    Attrib char_freq_!    -9.012295976905458
+    Attrib char_freq_$    -8.566715356016775
+    Attrib char_freq_#    -0.5650687457850391
+    Attrib capital_run_length_average    -1.3285816074975112
+    Attrib capital_run_length_longest    -2.014192029799075
+    Attrib capital_run_length_total    -4.032059808597699
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.00138045975162611
+    Attrib word_freq_make    0.06765358981779455
+    Attrib word_freq_address    -0.018494916841442974
+    Attrib word_freq_all    0.21064049287171255
+    Attrib word_freq_3d    0.18759337927471392
+    Attrib word_freq_our    -0.1033030704115897
+    Attrib word_freq_over    0.12548233125190283
+    Attrib word_freq_remove    0.7348637677376917
+    Attrib word_freq_internet    0.4269690962820271
+    Attrib word_freq_order    0.21953377114861328
+    Attrib word_freq_mail    0.005026054169406183
+    Attrib word_freq_receive    -0.08269487698794895
+    Attrib word_freq_will    -0.10839795510750617
+    Attrib word_freq_people    0.09805714921747752
+    Attrib word_freq_report    0.17212239421505288
+    Attrib word_freq_addresses    0.26777061962891646
+    Attrib word_freq_free    0.6144199638305949
+    Attrib word_freq_business    0.3133203175895583
+    Attrib word_freq_email    -0.053170515565234215
+    Attrib word_freq_you    -0.11712992533108417
+    Attrib word_freq_credit    0.24125610811434586
+    Attrib word_freq_your    -0.0765155610987837
+    Attrib word_freq_font    0.3019913385148516
+    Attrib word_freq_000    0.7016040141105643
+    Attrib word_freq_money    0.3719212108641715
+    Attrib word_freq_hp    -0.6058277442253798
+    Attrib word_freq_hpl    -0.317766432307173
+    Attrib word_freq_george    -0.580132103487175
+    Attrib word_freq_650    0.1122155844106165
+    Attrib word_freq_lab    -0.20457970813649112
+    Attrib word_freq_labs    -0.04359675085647678
+    Attrib word_freq_telnet    -0.052907318607046346
+    Attrib word_freq_857    -0.08280847133869407
+    Attrib word_freq_data    -0.26192445430128364
+    Attrib word_freq_415    -0.03472188794554928
+    Attrib word_freq_85    -0.1766148048657443
+    Attrib word_freq_technology    0.1625896400631411
+    Attrib word_freq_1999    -0.043207215444445314
+    Attrib word_freq_parts    -0.0466114094096315
+    Attrib word_freq_pm    -0.15190091029912128
+    Attrib word_freq_direct    0.15075739555559597
+    Attrib word_freq_cs    -0.1970712412767583
+    Attrib word_freq_meeting    -0.39600024638811193
+    Attrib word_freq_original    -0.03316775502788978
+    Attrib word_freq_project    -0.26517224449146204
+    Attrib word_freq_re    -0.2803867380257416
+    Attrib word_freq_edu    -0.5006557319488799
+    Attrib word_freq_table    -0.09958586974054733
+    Attrib word_freq_conference    -0.21161784906541967
+    Attrib char_freq_;    -0.0716916239783437
+    Attrib char_freq_(    -0.08905061871600463
+    Attrib char_freq_[    -0.04181488550374894
+    Attrib char_freq_!    0.6778863682159538
+    Attrib char_freq_$    0.7823333890138199
+    Attrib char_freq_#    0.06671886321168695
+    Attrib capital_run_length_average    0.18036525350806001
+    Attrib capital_run_length_longest    0.25436452219907363
+    Attrib capital_run_length_total    0.4930708446863661
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    0.20483020122836695
+    Attrib word_freq_make    0.2221235552975612
+    Attrib word_freq_address    0.00934880258244343
+    Attrib word_freq_all    0.40421289157674506
+    Attrib word_freq_3d    0.5058422299270048
+    Attrib word_freq_our    -0.1680810705692337
+    Attrib word_freq_over    0.23581870558012616
+    Attrib word_freq_remove    1.687618561206247
+    Attrib word_freq_internet    1.02848726101963
+    Attrib word_freq_order    0.4572166653689814
+    Attrib word_freq_mail    -0.08238922589021402
+    Attrib word_freq_receive    -0.30890963365729807
+    Attrib word_freq_will    -0.18899652586950058
+    Attrib word_freq_people    0.21539845858117945
+    Attrib word_freq_report    0.2507885951166844
+    Attrib word_freq_addresses    0.45423299730342753
+    Attrib word_freq_free    1.2713596352239385
+    Attrib word_freq_business    0.6919531813642031
+    Attrib word_freq_email    -0.1430447321828341
+    Attrib word_freq_you    -0.13382206055364715
+    Attrib word_freq_credit    0.6208506712934988
+    Attrib word_freq_your    0.21568183601185853
+    Attrib word_freq_font    0.6925977534696582
+    Attrib word_freq_000    1.6354605571815963
+    Attrib word_freq_money    0.7268468378878602
+    Attrib word_freq_hp    -1.3912766369322653
+    Attrib word_freq_hpl    -0.7840975801317791
+    Attrib word_freq_george    -1.4173897923492942
+    Attrib word_freq_650    -0.034908218313363645
+    Attrib word_freq_lab    -0.4677446203279714
+    Attrib word_freq_labs    -0.32846862235833557
+    Attrib word_freq_telnet    -0.2932807514656601
+    Attrib word_freq_857    -0.24422251992839186
+    Attrib word_freq_data    -0.6220801629979091
+    Attrib word_freq_415    -0.22760788102706284
+    Attrib word_freq_85    -0.42487062440111334
+    Attrib word_freq_technology    0.2331188992477219
+    Attrib word_freq_1999    -0.3766768094212888
+    Attrib word_freq_parts    -0.20043608194216364
+    Attrib word_freq_pm    -0.36756004671948156
+    Attrib word_freq_direct    0.1751141086413844
+    Attrib word_freq_cs    -0.6068276801117966
+    Attrib word_freq_meeting    -0.9373968208115432
+    Attrib word_freq_original    -0.14843743652906283
+    Attrib word_freq_project    -0.6655051303473024
+    Attrib word_freq_re    -0.7373092317290886
+    Attrib word_freq_edu    -1.1918345177248986
+    Attrib word_freq_table    -0.2381955667403529
+    Attrib word_freq_conference    -0.5065959442880487
+    Attrib char_freq_;    -0.2797899397320021
+    Attrib char_freq_(    -0.3071529886132167
+    Attrib char_freq_[    -0.20299553635862116
+    Attrib char_freq_!    1.3535812779510874
+    Attrib char_freq_$    1.8199636448528496
+    Attrib char_freq_#    0.10912987984727773
+    Attrib capital_run_length_average    0.3204095422086858
+    Attrib capital_run_length_longest    0.44347083565469914
+    Attrib capital_run_length_total    1.0811236870666845
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -1.7601131905726901
+    Attrib word_freq_make    -0.09753478902056435
+    Attrib word_freq_address    -0.4357852393347196
+    Attrib word_freq_all    -6.221388140324738E-4
+    Attrib word_freq_3d    -1.6667360012948944
+    Attrib word_freq_our    -1.3234368560184357
+    Attrib word_freq_over    -2.6704426472108906
+    Attrib word_freq_remove    -12.91920144359325
+    Attrib word_freq_internet    -7.378151684421132
+    Attrib word_freq_order    -4.82024777033075
+    Attrib word_freq_mail    0.06041113124997006
+    Attrib word_freq_receive    -6.432177622616625
+    Attrib word_freq_will    1.8186398012685494
+    Attrib word_freq_people    0.7900195876855577
+    Attrib word_freq_report    1.1274332994205505
+    Attrib word_freq_addresses    -1.916491158438477
+    Attrib word_freq_free    -14.680865284631489
+    Attrib word_freq_business    -4.763605344547548
+    Attrib word_freq_email    -6.121072392612822
+    Attrib word_freq_you    -3.4120549545576524
+    Attrib word_freq_credit    -2.814898158150246
+    Attrib word_freq_your    -5.67960702380549
+    Attrib word_freq_font    -3.6387058449243677
+    Attrib word_freq_000    -9.916333551401602
+    Attrib word_freq_money    -6.954452168919093
+    Attrib word_freq_hp    11.916536937773076
+    Attrib word_freq_hpl    7.133416456853685
+    Attrib word_freq_george    9.006292812505041
+    Attrib word_freq_650    3.5346349127554575
+    Attrib word_freq_lab    4.265745133921579
+    Attrib word_freq_labs    5.930301859664765
+    Attrib word_freq_telnet    3.0689556609672173
+    Attrib word_freq_857    2.8927930976254093
+    Attrib word_freq_data    4.471958575690896
+    Attrib word_freq_415    2.061919120443384
+    Attrib word_freq_85    3.721500168032904
+    Attrib word_freq_technology    1.7673134769042205
+    Attrib word_freq_1999    5.182536238877869
+    Attrib word_freq_parts    2.473251046329171
+    Attrib word_freq_pm    4.170125478914133
+    Attrib word_freq_direct    1.332749886786724
+    Attrib word_freq_cs    5.14936914256672
+    Attrib word_freq_meeting    6.9915043364567335
+    Attrib word_freq_original    0.4921623956001357
+    Attrib word_freq_project    5.824444171620069
+    Attrib word_freq_re    8.430467196798432
+    Attrib word_freq_edu    11.514919877982537
+    Attrib word_freq_table    3.586353026164563
+    Attrib word_freq_conference    4.405352383381044
+    Attrib char_freq_;    2.9549868098166545
+    Attrib char_freq_(    2.9274361882290982
+    Attrib char_freq_[    1.8079556531590932
+    Attrib char_freq_!    -14.121379355099977
+    Attrib char_freq_$    -11.288684394056265
+    Attrib char_freq_#    -0.4347530510293046
+    Attrib capital_run_length_average    -1.7525352498605549
+    Attrib capital_run_length_longest    -2.688941160620579
+    Attrib capital_run_length_total    -7.252746633525402
+Class 1
+    Input
+    Node 0
+Class 0
+    Input
+    Node 1
+
+
+Time taken to build model: 2.88 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.05 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1397               89.3223 %
+Incorrectly Classified Instances       167               10.6777 %
+Kappa statistic                          0.7689
+Mean absolute error                      0.1403
+Root mean squared error                  0.2842
+Relative absolute error                 29.3668 %
+Root relative squared error             58.1443 %
+Total Number of Instances             1564     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,770    0,026    0,950      0,770    0,850      0,779    0,968     0,947     1
+                 0,974    0,230    0,867      0,974    0,917      0,779    0,968     0,978     0
+Weighted Avg.    0,893    0,150    0,899      0,893    0,891      0,779    0,968     0,966     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 475 142 |   a = 1
+  25 922 |   b = 0
+

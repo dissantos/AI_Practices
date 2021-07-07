@@ -1,0 +1,174 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.5 -M 0.2 -N 50 -V 0 -S 0 -E 20 -H 1 -R
+Relation:     spambase
+Instances:    4601
+Attributes:   58
+              word_freq_make
+              word_freq_address
+              word_freq_all
+              word_freq_3d
+              word_freq_our
+              word_freq_over
+              word_freq_remove
+              word_freq_internet
+              word_freq_order
+              word_freq_mail
+              word_freq_receive
+              word_freq_will
+              word_freq_people
+              word_freq_report
+              word_freq_addresses
+              word_freq_free
+              word_freq_business
+              word_freq_email
+              word_freq_you
+              word_freq_credit
+              word_freq_your
+              word_freq_font
+              word_freq_000
+              word_freq_money
+              word_freq_hp
+              word_freq_hpl
+              word_freq_george
+              word_freq_650
+              word_freq_lab
+              word_freq_labs
+              word_freq_telnet
+              word_freq_857
+              word_freq_data
+              word_freq_415
+              word_freq_85
+              word_freq_technology
+              word_freq_1999
+              word_freq_parts
+              word_freq_pm
+              word_freq_direct
+              word_freq_cs
+              word_freq_meeting
+              word_freq_original
+              word_freq_project
+              word_freq_re
+              word_freq_edu
+              word_freq_table
+              word_freq_conference
+              char_freq_;
+              char_freq_(
+              char_freq_[
+              char_freq_!
+              char_freq_$
+              char_freq_#
+              capital_run_length_average
+              capital_run_length_longest
+              capital_run_length_total
+              class
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -2.056127213699574
+    Node 2    4.361657750438543
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    2.056127213699574
+    Node 2    -4.361657750438542
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    3.8409339779735743
+    Attrib word_freq_make    0.12809083439776894
+    Attrib word_freq_address    -1.618589222846515
+    Attrib word_freq_all    2.401839621279276
+    Attrib word_freq_3d    5.006460016406569
+    Attrib word_freq_our    17.213119534934027
+    Attrib word_freq_over    11.934228532111312
+    Attrib word_freq_remove    32.690854304362844
+    Attrib word_freq_internet    18.307477348525257
+    Attrib word_freq_order    11.7672161937122
+    Attrib word_freq_mail    2.6479198699150888
+    Attrib word_freq_receive    16.506122274305323
+    Attrib word_freq_will    -7.759624563712431
+    Attrib word_freq_people    -0.513434181484476
+    Attrib word_freq_report    -4.733016673043733
+    Attrib word_freq_addresses    5.035857841905095
+    Attrib word_freq_free    27.23352269350317
+    Attrib word_freq_business    16.775351611281287
+    Attrib word_freq_email    14.387384271037858
+    Attrib word_freq_you    3.2250201022040073
+    Attrib word_freq_credit    8.585708498937718
+    Attrib word_freq_your    13.02070356735283
+    Attrib word_freq_font    10.971953106181834
+    Attrib word_freq_000    25.432540918475652
+    Attrib word_freq_money    14.749966894835383
+    Attrib word_freq_hp    -26.98928585156731
+    Attrib word_freq_hpl    -16.165867408317606
+    Attrib word_freq_george    -20.018367832986595
+    Attrib word_freq_650    -10.65662566349942
+    Attrib word_freq_lab    -9.595501329394843
+    Attrib word_freq_labs    -12.998468283202211
+    Attrib word_freq_telnet    -6.905770085138048
+    Attrib word_freq_857    -7.562756380627613
+    Attrib word_freq_data    -11.813649892378942
+    Attrib word_freq_415    -7.1709863082931316
+    Attrib word_freq_85    -6.316060175527291
+    Attrib word_freq_technology    -3.214655485088815
+    Attrib word_freq_1999    -14.963159437172632
+    Attrib word_freq_parts    -5.714752551927698
+    Attrib word_freq_pm    -10.071589263469424
+    Attrib word_freq_direct    -3.3097884258045895
+    Attrib word_freq_cs    -10.463892801640409
+    Attrib word_freq_meeting    -16.826466111364656
+    Attrib word_freq_original    -8.499004548340148
+    Attrib word_freq_project    -10.17867965331652
+    Attrib word_freq_re    -20.576426064860758
+    Attrib word_freq_edu    -22.96226947673033
+    Attrib word_freq_table    -10.34869742718711
+    Attrib word_freq_conference    -8.371171565599955
+    Attrib char_freq_;    -8.38473316640378
+    Attrib char_freq_(    -8.664631868392577
+    Attrib char_freq_[    -5.5203912616552495
+    Attrib char_freq_!    18.75605686642076
+    Attrib char_freq_$    24.925134543601033
+    Attrib char_freq_#    0.7806109603776842
+    Attrib capital_run_length_average    3.472095210481431
+    Attrib capital_run_length_longest    5.580906729382718
+    Attrib capital_run_length_total    19.461959251407126
+Class 1
+    Input
+    Node 0
+Class 0
+    Input
+    Node 1
+
+
+Time taken to build model: 0.45 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1378               88.1074 %
+Incorrectly Classified Instances       186               11.8926 %
+Kappa statistic                          0.7429
+Mean absolute error                      0.1994
+Root mean squared error                  0.3179
+Relative absolute error                 41.7471 %
+Root relative squared error             65.0516 %
+Total Number of Instances             1564     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,759    0,039    0,927      0,759    0,834      0,752    0,950     0,917     1
+                 0,961    0,241    0,859      0,961    0,907      0,752    0,950     0,963     0
+Weighted Avg.    0,881    0,162    0,886      0,881    0,878      0,752    0,950     0,945     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 468 149 |   a = 1
+  37 910 |   b = 0
+
